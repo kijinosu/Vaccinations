@@ -38,7 +38,7 @@ colorsmatched <- mmrdata$colorBuckets[match(cnty.names, mmrdata$County)]
 minnesota <- map('county', 'minnesota', col = colors[colorsmatched], fill = TRUE,
     mar = c(3, 3, par("mar")[4], 0.1), ylim=c(43,49.1),
     myborder=0.11)
-title("Kindergarten vaccination rates by county, 2023/2024")
+title("Kindergarten MMR vaccination rates by county, 2023/2024")
 legend("bottom", leg.txt, horiz = TRUE, fill = colors)
 text(-97,43.2,"*Gaines Co., TX rate 2023/2024", col="#ED1C24",adj=c(0,0.5))
 # https://www.oaoa.com/local-news/the-immunization-partnership-response-to-gaines-county-measles-outbreak/
